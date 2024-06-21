@@ -1,0 +1,92 @@
+{% extends 'layout.html' %} {% load static %} {% block body %}
+{#style="background-image: url('{% static 'images/page1-2.jpg' %}');"#}
+{#style="background-image: url('{% static 'path/to/your/image.jpg' %}');background-size: cover; background-position: center;"#}
+<div class="container-fluid">
+  <div class="row">
+    <div class="col-md-3 mt-5 pt-5 pb-5 justify-content-center">
+      <img src="{% static 'images/Salama_icon.png' %}" alt="Salama millers logo" />
+    </div>
+    <div
+      class="col-md-9 pt-5 mt-5 p-b-5 justify-content-center"
+    >
+      <div
+        class="row m-4 pl-4 justify-content-center"
+        style="background-color: white"
+      >
+        <h3 style="color: #000080">Who We Are</h3>
+      </div>
+      <div class="row pt-3">
+        <p style="color: black">
+          Salama Milers limited is a Kenya based company that processes,
+          produces and sells maize flour, animal feeds and cereals.
+        </p>
+        <p style="color: black">
+          We strictly monitor ALL our raw material and finished product quality
+          through a well-equipped modern laboratory with highly trained and
+          qualified technicians.
+        </p>
+        <p style="color: black">
+          Our technicians ensure that every batch of raw material is tested for
+          quality as well as ensuring that finished goods meet our set
+          standards.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid m-3">
+  <div class="row text-center justify-content-center">
+    <div
+      class="col ml-4 pl-4 justify-content-center"
+      style="background-color: white"
+    >
+      <h3 style="color: #000080">What We Deal In</h3>
+    </div>
+  </div>
+
+  <div class="row p-5 text-black justify-content-evenly">
+    <div class="col-md-3 p-3" style="background-color: white">
+      <div class="row justify-content-center">
+        <img
+          src="{% static 'images/salama_bag.jpg' %}"
+          alt=""
+          style="width: 189px; height: 225px"
+        />
+      </div>
+      <div class="row text-center">
+        <h4>Salama maize meal</h4>
+      </div>
+    </div>
+    <div class="col-md-3 p-3" style="background-color: white">
+      <div class="row justify-content-center">
+        <img
+          src="{% static 'images/LOIAN.png' %}"
+          alt=""
+          style="width: 189px; height: 225px"
+        />
+      </div>
+      <div class="row text-center">
+        <h4>Loian maize meal</h4>
+      </div>
+    </div>
+  </div>
+
+  <div class="row p-5 text-black justify-content-evenly">
+    <div class="col">
+      <div class="row justify-content-evenly" style="background-color: white">
+        <div class="col-md-5 p-3" style="background-color: white">
+          <img src="{% static 'images/animal.jpg' %}" alt="" />
+        </div>
+        <div class="col-md-5 p-3" style="background-color: white">
+          <img src="{% static 'images/animal2.jpg' %}" alt=""
+        </div>
+      </div>
+      <div class="row text-center">
+        <h4>Animal feeds</h4>
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

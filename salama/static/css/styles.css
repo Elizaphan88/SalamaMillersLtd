@@ -1,0 +1,50 @@
+body {
+    padding-top: 70px; /* Adjust this value based on your navbar height */
+    background-color: whitesmoke;
+}
+
+.navbar {
+    transition: background-color 0.3s;
+}
+
+.navbar.transparent {
+    background-color: transparent;
+}
+
+.navbar.sticky {
+    background-color: white;
+}
+
+#navbar-wrapper {
+    position: fixed;
+    margin: 0px;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Ensure it's above other content */
+}
+
+.custom-nav-link {
+    color: #000080 !important; /* Important to override Bootstrap styles */
+    padding: 5px 10px; /* Adds padding around the link to make it more button-like */
+    border: 1px solid transparent; /* Adds a border which will be visible on hover */
+    border-radius: 5px; /* Makes the corners rounded */
+    transition: background-color 0.3s, border-color 0.3s, color 0.3s; /* Smooth transition for the hover effect */
+}
+
+.custom-nav-link:hover {
+    color: black !important; /* Text color on hover */
+    background-color: rgb(212, 212, 212) !important; /* Background color on hover */
+    border-color: rgb(212, 212, 212) !important; /* Border color on hover */
+}
+
+.custom-nav-link.active {
+    background-color: #eeb814 !important;
+    border-color: #eeb814 !important;
+}
+
+.custom-error-style {
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+    color: #721c24;
+}
